@@ -11,6 +11,7 @@ body {
   margin: 0;
   font-family: "Varela Round", sans-serif;
 }
+
 .header {
   display: block;
   margin: 0 auto;
@@ -27,6 +28,7 @@ body {
   margin-left: 0;
   transition: margin-left 250ms ease-in-out;
 }
+
 .main {
   margin: 0 auto;
   display: block;
@@ -84,7 +86,7 @@ body {
 }
 .sidebarMenuInner {
   max-height: calc(100% - 90px);
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   padding: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
