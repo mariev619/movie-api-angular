@@ -1,13 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>MovieApiAngular</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movies App</title>
+  <link rel="stylesheet" href="flexboxgrid.min.css" />
+  <link rel="stylesheet" href="sidebar.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <app-root></app-root>
+  <div class="header">
+    <a href="index.html">
+      <img class="logo" src="logo.png" />
+    </a>
+  </div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><a href="#" target="_blank">Action</a></li>
+      <li><a href="#" target="_blank">Adventure</a></li>
+      <li><a href="#" target="_blank">Animation</a></li>
+      <li><a href="#" target="_blank">Comedy</a></li>
+      <li><a href="#" target="_blank">Crime</a></li>
+      <li><a href="#" target="_blank">Documentary</a></li>
+      <li><a href="#" target="_blank">Drama</a></li>
+    </ul>
+  </div>
+
+  <div id="center" class="main center">
+
+    <div class="container">
+
+      <!-- Début partie spécifique home page -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <a href="details.html">
+              <img src="https://image.tmdb.org/t/p/w780//1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" />
+              <p>Spider-Man: No Way Home</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <a href="details.html">
+              <img src="https://image.tmdb.org/t/p/w780//1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" />
+              <p>Spider-Man: No Way Home</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <a href="details.html">
+              <img src="https://image.tmdb.org/t/p/w780//1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" />
+              <p>Spider-Man: No Way Home</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <a href="details.html">
+              <img src="https://image.tmdb.org/t/p/w780//1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" />
+              <p>Spider-Man: No Way Home</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Fin partie spécifique home page -->
+
+    </div>
+
+  </div>
 </body>
+
 </html>
