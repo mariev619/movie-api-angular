@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Card } from '../types';
-import { PostService } from '../post.service';
+import { CardService } from '../card.service';
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
@@ -10,10 +10,10 @@ export class BodyComponent implements OnInit {
 
   cards: Card[] = [];
 
-  constructor(private postService: PostService) { }
+  constructor(private cardService: CardService) { }
 
   ngOnInit(): void {
-    this.postService.getAllPosts()
+    this.cardService.getAllCards()
       .subscribe(cards => {
         this.cards = cards;
       });

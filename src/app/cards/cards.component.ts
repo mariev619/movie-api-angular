@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { PostService } from '../post.service';
+import { CardService } from '../card.service';
 import { Card } from '../types';
 
 @Component({
