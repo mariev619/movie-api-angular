@@ -2,26 +2,22 @@
 <div id="center" class="main center">
 
     <div class="container">
-
-    <!-- Début partie spécifique home page -->
         <div class="row">
             <div class="col-xs-12 col-sm-4">
-                <img class="details-img" [src]="card?.poster_path" />
+                <img class="details-img" [src]="card.poster_path" />
             </div>
             <div class="col-xs-12 col-sm-8">
-                <h2>{{ card?.title }}</h2>
-                <h3>{{ card?.overview }}</h3>
+                <h2>{{ card.title }}</h2>
+                <h3>{{ card.overview }}</h3>
                 <p class="meta-wrap">
-                    <span class="rating">rating: {{ card?.vote_average}}</span>
-                    <span class="meta">{{ card?.original_language }} / 188 min. / {{ card?.release_date }}</span>
+                    <span class="rating">rating: {{ card.vote_average}}</span>
+                    <span class="meta">{{ card.original_language }} / 188 min. / {{ card.release_date }}</span>
                 </p>
 
-                <ul class="genres" *ngFor="let genre of card?.genres">
-                    <li>{{ genre.name }}</li>
+                <ul class="genres" >
+                    <li *ngFor="let genre of card.genres">{{ genre.name }}</li>
                 </ul>
             </div>
-            <!-- Fin partie spécifique home page -->
-
         </div>
     </div>
 </div>
