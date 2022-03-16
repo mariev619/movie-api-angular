@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { DetailsComponent } from './details/details.component';
+import { CardsComponent } from './cards/cards.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { DetailsComponent } from './details/details.component';
     NavbarComponent,
     HeaderComponent,
     BodyComponent,
-    DetailsComponent
+    DetailsComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
