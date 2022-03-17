@@ -18,4 +18,11 @@ export class BodyComponent implements OnInit {
         this.cards = cards;
       });
   }
+
+  genreSelected(genre: string) {
+    this.cardService.getCardsByGenre(genre)
+      .subscribe(cards => {
+        this.cards = cards;
+      });
+  }
 }

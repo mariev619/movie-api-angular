@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class CardService {
   serverUrl = 'https://movie-api.benoithubert.me';
   moviePath = '/movies';
+  moviesByGenrePath = "?genre=";
 
   constructor(
     private http: HttpClient,
@@ -21,6 +22,13 @@ export class CardService {
     return this.http
       .get<Card[]>(
         `${this.serverUrl}${this.moviePath}`
+      );
+  }
+
+  getCardsByGenre(genre: string): Observable<Card[]>{
+    return this.http
+      .get<Card[]>(
+        `${this.serverUrl}${this.moviePath}${this.moviesByGenrePath}${genre}`
       );
   }
 

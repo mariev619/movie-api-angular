@@ -50,14 +50,14 @@ body {
 }
 .sidebarMenuInner {
   max-height: calc(100% - 90px);
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
   padding: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 .sidebarMenuInner li {
   list-style: none;
   color: #fff;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   font-weight: bold;
   padding: 15px 20px;
   cursor: pointer;
